@@ -3,31 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Pets" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Pets</title>
 </head>
-<body>
+<body class="body">
     <header>
         <h1>My Pets</h1>
     </header>
-    <hr>
     <section>
-        <img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo3AgcJtwVpAUZ6sSXtDKRTl70jiFKXczw4Q&s" alt="this is a golden retriver">
-        <article>This is a golden retriever</article>
-    </section>
-    <hr>
-    <section>
-        <img width="100px" src="https://nupec.com/wp-content/uploads/2022/10/pomeranian-spitz-2021-08-26-17-36-07-utc-min.jpg" alt="this is a pomeranian">
-        <article>This is a pomeranian</article>
-    </section>
-    <hr>
-    <section>
-        <img width="100px" src="https://thumbs.dreamstime.com/b/perrito-del-doberman-31921663.jpg" alt="this is a doberman">
-        <article>This is a doberman</article>
-    </section>
-    <hr>
-    <button type="button"><a href="http://127.0.0.1:5500/portafolio/index.html">Portafolio</a></button>
+        <div class="card1" id="card1">
+            <div class="front1">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo3AgcJtwVpAUZ6sSXtDKRTl70jiFKXczw4Q&s" alt="Imagen">
+            </div>
 
-    
+            <div class="back1">
+               <article>This is a golden retriever</article>
+            </div>
+        </div>
+    </section>
+    <section>
+         <div class="card2" id="card2">
+            <div class="front2">
+                 <img src="https://nupec.com/wp-content/uploads/2022/10/pomeranian-spitz-2021-08-26-17-36-07-utc-min.jpg" alt="Imagen">
+            </div>
+
+            <div class="back2">
+                <article>This is a pomeranian</article>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="card3" id="card3">
+            <div class="front3">
+                 <img src="https://thumbs.dreamstime.com/b/perrito-del-doberman-31921663.jpg" alt="Imagen">
+            </div>
+
+            <div class="back3">
+                <article>This is a doberman</article>
+            </div>
+        </div>
+    </section>
+    <button class="button" type="button"><a href="index.html">Portafolio</a></button> 
+
+    <script>
+document.getElementById("card1").onclick = function() {
+  this.classList.toggle("flipped");
+};
+
+document.getElementById("card2").onclick = function() {
+  this.classList.toggle("flipped");
+};
+
+document.getElementById("card3").onclick = function() {
+  this.classList.toggle("flipped");
+};
+</script>
     <!--nhy,uyf-->
 </body>
 </html>
