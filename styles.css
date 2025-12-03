@@ -1,0 +1,119 @@
+h1{
+    background-color: rgb(134, 134, 231);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #91d5f0;
+}
+.yo{
+    background-color: rgb(243, 213, 218);
+    padding: 20px;
+    text-align: center;
+}
+.links{
+    background-color: rgb(175, 237, 241);
+    padding: 21px;
+    width: 48%;
+    bottom: 30px;
+    float: left;
+}
+.things{
+    background-color:rgb(175, 237, 241);
+    padding: 12.5px;
+    width: 48%;
+    bottom: 20px;
+    float: right;
+}
+/* --- ESTILO PARA TODAS LAS TARJETAS --- */
+
+.card1, .card2, .card3 {
+  width: 250px;
+  height: 200px;
+  perspective: 800px;      /* Hace posible el efecto 3D */
+  cursor: pointer;
+  position: relative;
+  margin: 20px auto;        /* Centra las tarjetas */
+}
+
+/* Caras de la tarjeta */
+.front1, .back1,
+.front2, .back2,
+.front3, .back3 {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  backface-visibility: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s; 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Imagen */
+.front1 img, .front2 img, .front3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Parte trasera */
+.back1, .back2, .back3 {
+  background: white;
+  color: black;
+  padding: 15px;
+  font-size: 18px;
+  transform: rotateY(180deg);
+}
+
+/* --- GIRO PARA CADA TARJETA --- */
+
+.card1.flipped .front1,
+.card2.flipped .front2,
+.card3.flipped .front3 {
+  transform: rotateY(180deg);
+}
+
+.card1.flipped .back1,
+.card2.flipped .back2,
+.card3.flipped .back3 {
+  transform: rotateY(360deg);
+}
+
+.button{
+    background-color: rgb(177, 177, 238);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    bottom: 50%;
+    text-decoration: none;
+}
+
+.reset{
+    background-color: rgb(177, 177, 238);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    bottom: 30%;
+    text-decoration: none;
+}
