@@ -6,58 +6,38 @@
     <link rel="stylesheet" href="styles.css">
     <title>Pets</title>
 </head>
+
 <body class="body">
-    <header>
-        <h1>My Pets</h1>
-    </header>
-    <section>
-        <div class="card1" id="card1">
-            <div class="front1">
-                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo3AgcJtwVpAUZ6sSXtDKRTl70jiFKXczw4Q&s" alt="Imagen">
-            </div>
 
-            <div class="back1">
-               <article>This is a golden retriever</article>
-            </div>
-        </div>
-    </section>
-    <section>
-         <div class="card2" id="card2">
-            <div class="front2">
-                 <img src="https://nupec.com/wp-content/uploads/2022/10/pomeranian-spitz-2021-08-26-17-36-07-utc-min.jpg" alt="Imagen">
-            </div>
+<header class="header-flex">
+    <h1>My Pets</h1>
+    <nav class="nav-flex">
+        <a href="index.html">Home</a>
+    </nav>
+</header>
 
-            <div class="back2">
-                <article>This is a pomeranian</article>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="card3" id="card3">
-            <div class="front3">
-                 <img src="https://thumbs.dreamstime.com/b/perrito-del-doberman-31921663.jpg" alt="Imagen">
-            </div>
+<h2 class="subtitulo">Pets Gallery</h2>
 
-            <div class="back3">
-                <article>This is a doberman</article>
-            </div>
-        </div>
-    </section>
-    <button class="button" type="button"><a href="index.html">Portafolio</a></button> 
+<!-- GALERÍA CON FLEXBOX Y GRID -->
+<section class="pets-grid">
 
-    <script>
-document.getElementById("card1").onclick = function() {
-  this.classList.toggle("flipped");
-};
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo3AgcJtwVpAUZ6sSXtDKRTl70jiFKXczw4Q&s">
+        <article>This is a golden retriever</article>
+    </div>
 
-document.getElementById("card2").onclick = function() {
-  this.classList.toggle("flipped");
-};
+    <div class="card">
+        <img src="https://nupec.com/wp-content/uploads/2022/10/pomeranian-spitz-2021-08-26-17-36-07-utc-min.jpg">
+        <article>This is a pomeranian</article>
+    </div>
 
-document.getElementById("card3").onclick = function() {
-  this.classList.toggle("flipped");
-};
-</script>
-    <!--nhy,uyf-->
+    <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/perrito-del-doberman-31921663.jpg">
+        <article>This is a doberman</article>
+    </div>
+
+</section>
+
 </body>
 </html>
+
