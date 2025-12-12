@@ -6,40 +6,61 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
+    <!-- HEADER FLEXBOX -->
+    <header class="header-flex">
         <h1>Isabella Florez</h1>
+        <nav class="nav-flex">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <section class="yo">
+
+    <!-- SECCIÓN ABOUT -->
+    <section id="about" class="yo">
         <h2>About me</h2>
         <p>Isabella, coder of Riwi and system engineer.</p>
-        </section>
-
-    <section class="links">
-        <h2>Proyects</h2>
-        <ul>
-            <li><a href="https://github.com/Isa-florez/historia_uduario.git">Users history 1</a></li>
-            <li><a href="https://github.com/Isa-florez/historia-de-usuario-3.git">Users history 2</a></li>
-            <li><a href="mascotas.html">Pets</a></li>
-        </ul>
     </section>
 
-    <section class="things">
+    <!-- PROYECTOS EN GRID -->
+    <section id="projects" class="projects-grid">
+        <h2>Projects</h2>
+
+        <div class="grid-container">
+            <article class="item">
+                <a href="https://github.com/Isa-florez/historia_uduario.git">Users history 1</a>
+            </article>
+
+            <article class="item">
+                <a href="https://github.com/Isa-florez/historia-de-usuario-3.git">Users history 2</a>
+            </article>
+
+            <article class="item"><a href="mascotas.html">Pets</a></article>
+        </div>
+
+        <a href="#top" class="volver">Volver arriba</a>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="things">
         <h2>Contact</h2>
-        <form action="/submit" method="POST">
-            <label for="name">Name:</label>
+        <form>
+            <label>Name:</label>
             <input type="text"> <br>
 
-            <label for="number">Number:</label>
+            <label>Number:</label>
             <input type="text"> <br>
 
-            <label for="email">Email:</label>
+            <label>Email:</label>
             <input type="email"> <br>
 
             <button class="reset" type="reset">reset</button>
         </form>
-    </nav>
-    <!--nhy,uyf-->
+
+        <a href="#top" class="volver">Volver arriba</a>
+    </section>
 </body>
 </html>
+
